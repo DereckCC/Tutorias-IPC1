@@ -31,7 +31,6 @@ public class MetodoInsercion extends Thread {
             int j;
             Producto aux;
             for (int i = 1; i < Ventana.productos.length; i++) { // desde el segundo elemento hasta
-            
                 aux = Ventana.productos[i];           // el final, guardamos el elemento y
                 j = i - 1;            // empezamos a comprobar con el anterior
                 while ((j >= 0) && (aux.getCantidad() < Ventana.productos[j].getCantidad())) {// mientras queden posiciones y el
